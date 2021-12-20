@@ -41,6 +41,7 @@
     border-radius: 20px;
     border: none;
     background-color: whitesmoke;
+    outline: none;
 }
 
 .header__windown{
@@ -62,16 +63,28 @@
     font-size: 24px;
     color:#1E90FF;
 }
-.header__note-home{
+
+.header__note{
     position: absolute;
-    top: 68px;
+    top: 60px;
     background-color: var(--black-color);
     opacity: 0.9;
     color:var(--white-color) ;
-    padding: 4px 8px;
+    padding: 10px 14px;
+    display: none;
+    border-radius: 8px;
+    font-size: 12px;
+    opacity: 0.8;
 
 }
+.header__thisWindown-item:hover .header__note-home,
+.header__windown-Market:hover .header__note-Market,
+.header__windown-Group:hover .header__note-Group,
+.header__windown-Game:hover .header__note-Game{
+    display: block;
+}
 .header__windown-item{
+    position: relative;
     width: 100px;
     height: 50px;
     text-align: center;
