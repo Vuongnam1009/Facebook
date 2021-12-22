@@ -1,6 +1,7 @@
 :root{
     --black-color: #000 ;
     --white-color: #fff;
+    --text-color:#65676b;
 }
 *{
     box-sizing: inherit;

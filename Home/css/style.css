@@ -1,18 +1,25 @@
 .header{
+    position: fixed;
     height: 56px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     background-color: var(--white-color);
     justify-content: space-between;
 }
 .header__banner{
+    width: 320px;
     display: flex;
-    align-self: center;
+    align-items: center;
 }
 
 .header__logo{
     position: relative;
     height: 39px;
     margin-left: 16px;
+    display: block;
 }
 .header__logo-icon{
     color:#1E90FF;
@@ -20,29 +27,146 @@
 
 }
 .header__search{
-    position: relative;
+    position: fixed;
+    align-self: flex-start;
+    z-index: 1;
+    width: 360px;
+    background-color: var(--white-color);
+    box-shadow: 5px 5px 4px rgb(0 0 0 / 10%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+.header__search-header{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header__search-btn{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--white-color);
+    display:none ;
+}
+.header__search-btn:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.header__search-btnIcon{
+    color: rgb(124, 123, 121);
+    font-size: 18px;
+}
+.header__search-form{
+    display: flex;
+    align-items: center;
 }
 .header__search-label{
     position: absolute;
-    left: 24px;
-    top: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 12px;
+    margin-left: 12px;
+    height: 40px;
+    width: 280px;
+    background-color: whitesmoke;
 }
 .header__search-icon{
     font-size: 16px;
     color: rgb(124, 123, 121);
-
+    padding-right: 12px;
 }
 .header__search-input{
-    height: 40px;
-    width: 280px;
     font-size: 16px;
-    padding-left: 38px;
-    margin-left: 12px;
+    height: 40px;
     border-radius: 20px;
     border: none;
-    background-color: whitesmoke;
     outline: none;
+    background-color: whitesmoke;
 }
+
+                 /* history */
+.header__search__container{
+    flex-direction: column;
+    display: none;
+}
+.header__search__container-recently{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header__search__container-recently--text{
+    padding-left: 12px;
+    font-size: 18px;
+
+}
+.header__search__container-recently-edit{
+    margin-right: 12px;
+    padding: 8px 4px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(79, 138, 216);
+}
+.header__search__container-recently-edit:hover{
+    background-color: rgb(238, 234, 234);
+}
+.header__search__container-history{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 340px;
+    border-radius: 8px;
+    align-self: center;
+}
+.header__search__container-history:last-child{
+    margin-bottom: 12px;
+}
+.header__search__container-history:hover{
+    background-color: rgb(238, 234, 234);
+}
+.header__search__container-content{
+    display: flex;
+    align-items: center;
+
+
+}
+.header__search__container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--text-color);
+    background-color: rgb(248, 247, 247);
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 4px;
+    border: 1px solid rgb(238, 234, 234);
+}
+.header__search__container-text{
+    font-size: 15px;
+    color: var(--text-color);
+
+}
+.header__search__container-close{
+    font-size: 16px;
+    padding: 6px 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    color: var(--text-color);
+}
+.header__search__container-close:hover{
+    background-color: rgb(207, 207, 206);
+}
+
 
 .header__windown{
     display: flex;
@@ -143,6 +267,7 @@
 .header__profile-avt{
     width: 28px;
     height: 28px;
+    object-fit: cover;
     border-radius: 50%;
     margin-right: 8px;
     margin-left: 4px;
@@ -166,4 +291,9 @@
     font-size: 18px;
 }
 
-.header__btn--menu{}
+.header__btn--menu:hover .header__note-menu,
+.header__btn--messenger:hover .header__note-messenger,
+.header__btn--notify:hover .header__note-notify,
+.header__btn--account:hover .header__note-account{
+    display: block;
+}
