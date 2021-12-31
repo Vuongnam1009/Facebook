@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="../font/fontawesome-free-5.15.4/css/all.css">
 </head>
 <body>
-    <div class="app">
-
+    <div id="app">
         <header class="header">
             <div class="header__banner">
                 <a href="#" class="header__logo">
@@ -24,11 +23,11 @@
                             <i class="header__search-btnIcon fas fa-arrow-left"></i>
                         </button>
                         <div class="header__search-form">
-                            <label for="111" class="header__search-label">
-                                <span class="header__search-icon">
+                            <label for="1111" class="header__search-label">
+                                <a class="header__search-icon">
                                     <i class="fas fa-search"></i>
-                                </span>
-                                <input  type="text"placeholder="Tìm kiếm trên Facebook" id="111"class="header__search-input">
+                                </a>
+                                <input  type="text"placeholder="Tìm kiếm trên Facebook" id="1111"class="header__search-input">
                             </label>
                         </div>
                     </div>
@@ -131,29 +130,565 @@
             </div>
             <div class="header__funtions">
                 <a href="" class="header__profile">
-                    <img src="./img/avt.jpg" alt="" class="header__profile-avt">
+                    <img src="./img/avt.jpg" alt="" class="header__profile-avt avt avt--s avt--circle">
                     Nam
                 </a>
-                <button class="header__btn header__btn--menu ">
+                <div class="header__btn header__btn--menu ">
                     <i class="header__btn-icon fas fa-align-justify"></i>
                     <div class="header__note header__note-menu">Menu</div>
-                </button>
-                <button class=" header__btn header__btn--messenger ">
+                </div>
+                <div class="header__menu-label">
+
+                    <div class="header__menu">
+                        <header class="header__menu-header">Menu</header>
+                        <div class="header__menu-container">
+                            <div class="header__menu-content">
+                                <div class="header__menu-search">
+                                    <label for="1112" class="header__menu-search-label">
+                                        <a class="header__menu-search-icon">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                        <input  type="text"placeholder="Tìm kiếm trên Facebook" id="1112"class="header__menu-search-input">
+                                    </label>
+                                </div>
+                                <div class="header__menu-box">
+                                    <header class="header__menu-box-header">Xã hội</header>
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/sukien.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Sự kiện</h3>
+                                            <p class="header__menu-ingredient-p">Tổ chức hoặc tìm sự kiện cùng những hoạt động khác trên mạng và ở quanh đây.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/banbe.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Bạn bè</h3>
+                                            <p class="header__menu-ingredient-p">Tìm kiếm bạn bè hoặc những người bạn có thể biết.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/nhom.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Nhóm</h3>
+                                            <p class="header__menu-ingredient-p">Kết nối với những người cùng chung sở thích.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/bangTin.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Bảng tin</h3>
+                                            <p class="header__menu-ingredient-p">Xem bài viết phù hợp của những người và Trang bạn theo dõi.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/trang.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Trang</h3>
+                                            <p class="header__menu-ingredient-p">Khám phá và kết nối với các doanh nghiệp trên facebook.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__menu-box">
+                                    <header class="header__menu-box-header">Giải trí</header>
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/video.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Video chơi game</h3>
+                                            <p class="header__menu-ingredient-p">Xem, kết nối với những game và người phát trực tiếp mà bạn yêu thích.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/game.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Chơi game</h3>
+                                            <p class="header__menu-ingredient-p">Chơi game mà bạn yêu thích.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/watch.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Watch</h3>
+                                            <p class="header__menu-ingredient-p">Đích đến của video phù hợp với sở thích và quan hệ kết nối của bạn.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="header__menu-box">
+                                    <header class="header__menu-box-header">Mua sắm</header>
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/Pay.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Facebook Pay</h3>
+                                            <p class="header__menu-ingredient-p">Một cách dễ dàng, bảo mật để thanh toán trên các ứng dụng bạn đang dùng.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/market.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Marketplace</h3>
+                                            <p class="header__menu-ingredient-p">Mua bán trong cộng đồng của bạn.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__menu-box">
+                                    <header class="header__menu-box-header">Cá nhân</header>
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/hoatdongquangcao.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Hoạt động quảng cáo gần đây</h3>
+                                            <p class="header__menu-ingredient-p"> Xem toàn bộ quảng cáo mà bạn đã tương tác trên Facebook.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/kiniem.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Kỷ niệm</h3>
+                                            <p class="header__menu-ingredient-p">Lướt xem ảnh,video và bài viết cũ của bạn trên Facebook.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/daluu.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Đã lưu</h3>
+                                            <p class="header__menu-ingredient-p">Tìm bài viết, ảnh và video mà bạn lưu để xem sau.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/thoitiet.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Thời tiết</h3>
+                                            <p class="header__menu-ingredient-p">Kiểm tra dự báo thời tiết tại địa phương và đang ký nhận thông báo về tình hình thời tiết hàng ngày.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__menu-box">
+                                    <header class="header__menu-box-header">Chuyên nghiệp</header>
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/quanlyquangcao.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Trình quản lý quảng cáo</h3>
+                                            <p class="header__menu-ingredient-p">Tạo, quản lý và theo dõi hiệu quả quảng cáo.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/vieclam.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Việc làm</h3>
+                                            <p class="header__menu-ingredient-p">Tìm việc làm phù hợp với bạn.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__menu-box">
+                                    <header class="header__menu-box-header">Nguồn lực cho cộng đồng</header>
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/trungtamkhoahoc.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Trung tâm khoa học khí hậu</h3>
+                                            <p class="header__menu-ingredient-p">Tìm hiểu về vấn đề biến đổi khí hậu và tác động của hiện tượng này.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/ungphokhancap.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Ứng phó khẩn cấp</h3>
+                                            <p class="header__menu-ingredient-p">Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra trên thế giới.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/chiendichgayquy.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Chiến dịch gây quỹ</h3>
+                                            <p class="header__menu-ingredient-p">Quyên góp và gây quỹ cho tổ chức phi lợi nhuận và mục đích cá nhân.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__menu-box">
+                                    <header class="header__menu-box-header">Sản phẩm khác của meta</header>
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/messenger.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Messenger</h3>
+                                            <p class="header__menu-ingredient-p">Chat ngay tức thì với bạn bè và những người đã kết nối.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__menu-ingredient">
+                                        <img src="./img/messengernhi.png" alt="" class="header__menu-ingredient--img">
+                                        <div class="header__menu-ingredient-text">
+                                            <h3 class="header__menu-ingredient-h1">Messenger nhí</h3>
+                                            <p class="header__menu-ingredient-p">Cho phép nhắn tin với bạn thân và gia đình.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="header__menu-sidebar">
+                                <header class="menu__sidebar-header">Tạo</header>
+                                <div class="menu__sidebar-container">
+                                    <div class="menu__sidebar-content">
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-edit"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Đăng
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-book-open"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Tin
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-video"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Phòng họp mặt
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__sidebar-content">
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-flag"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Trang
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-volume-off"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Quảng cáo
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-users"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Nhóm
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-calendar-plus"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Sự kiện
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-shopping-basket"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Bài niêm yết trên Marketplace
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__sidebar-item">
+                                            <div class="menu__item-boxIcon">
+                                                <i class="menu__boxIcon-icon fas fa-briefcase"></i>
+                                            </div>
+                                            <div class="menu__item-text">
+                                                Việc làm
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" header__btn header__btn--messenger ">
                     <i class="header__btn-icon fab fa-facebook-messenger"></i>
                     <div class="header__note header__note-messenger">Messenger</div>
-                </button>
-                <button class=" header__btn header__btn--notify ">
+                </div>
+                <div class=" header__btn header__btn--notify ">
                     <i class="header__btn-icon fas fa-bell"></i>
                     <div class="header__note header__note-notify">Thông báo</div>
-                </button>
-                <button class="header__btn header__btn--account ">
+                </div>
+                <div class="header__btn header__btn--account ">
                     <i class="header__btn-icon fas fa-sort-down"></i>
                     <div class="header__note header__note-account">Tài khoản</div>
-                </button>
+                </div>
             </div>
 
         </header>
         <div class="container">
+            <div class="sidebar sidebar--scroll sidebar--left">
+                <div class="sidebar__menu">
+                    <div class="sidebar__menu-short">
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt avt--circle" src="./img/avt.jpg" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Vương Nam</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/banbe.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Bạn bè</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/nhom.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Nhóm</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/sukien.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Sự kiện</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/market.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Marketplace</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/watch.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Watch</h3>
+                                <p class="sidebar__text-subheading">
+                                    <i class="sidebar__subheading-icon fas fa-circle"></i>
+                                    9+ video mới
+                                </p>
+                            </div>
+                        </a>
+
+                        <a class="sidebar__item sidebar__seeMore">
+                            <div class="sidebar__icon">
+                                <div class="avt avt--circle">
+                                    <i class="avt__icon fas fa-angle-down"></i>
+
+                                </div>
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Xem thêm</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar__menu-more">
+                        <a href="#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img src="./img/chiendichgayquy.png" alt="" class="avt">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Chiến dịch gây quỹ</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/game.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Game</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/daluu.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Đã lưu</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/Pay.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Facebook Pay</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/gandaynhat.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Gần đây nhất</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/hoatdongquangcao.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Hoạt động quảng cáo gần đây</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/kiniem.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Kỉ niệm</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/messenger.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Mesenger</h3>
+                            </div>
+                        </a>
+
+                        <a href= "#" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img class="avt" src="./img/messengernhi.png" alt="">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Mesenger nhí</h3>
+                            </div>
+                        </a>
+                        <div class="sidebar__item sidebar__hide">
+                            <div class="sidebar__icon">
+                                <div class="avt avt--circle">
+                                    <i class="avt__icon fas fa-angle-up"></i>
+                                </div>
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Ẩn bớt</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar__shortcuts">
+                    <header class="shortcuts__header">
+                        <h3 class="shortcuts__header-text">Lối tắt của bạn</h3>
+                        <p class="shortcuts__header-edit">Chỉnh sửa</p>
+                    </header>
+                    <div class="shortcuts__container">
+                        <a href="" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img src="./img/choonline.jpg" alt="" class="avt avt--square">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">CHỢ ONLINE (VIP)</h3>
+                            </div>
+                        </a>
+
+                        <a href="" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img src="./img/redTeam.jpg" alt="" class="avt avt--square">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">RED- TEAM</h3>
+                            </div>
+                        </a>
+                        <a href="" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img src="./img/nhom.png" alt="" class="avt">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Học lập trình web (F8 - Fullstack.edu.vn)</h3>
+                            </div>
+                        </a>
+
+                        <a href="" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img src="./img/congDongForn.jpg" alt="" class="avt avt--square">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Cộng đồng Front-end(HTML/CSS/JS)</h3>
+                            </div>
+                        </a>
+
+                        <a href="" class="sidebar__item">
+                            <div class="sidebar__icon">
+                                <img src="./img/bietphuhauphuong.jpg" alt="" class="avt avt--square">
+                            </div>
+                            <div class="sidebar__text">
+                                <h3 class="sidebar__text-heading">Biệt phủ hậu phương</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="license">
+                    <a href="#" class="license__item license__item--hover">Quyền riêng tư</a>
+                    <a class="license__icon">·</a>
+                    <a href="#" class="license__item license__item--hover">Điều khoản</a>
+                    <a class="license__icon">·</a>
+                    <a href="#" class="license__item license__item--hover">Quảng cáo</a>
+                    <a class="license__icon">·</a>
+                    <a href="#" class="license__item license__item--hover">Lựa chọn quảng cáo</a>
+                    <a class="license__icon">·</a>
+                    <a href="#" class="license__item license__item--hover">Cookie</a>
+                    <a class="license__icon">·</a>
+                    <a  class="license__item">Xem thêm</a>
+                    <a class="license__icon">·</a>
+                    <a  class="license__item">Meta © 2021</a>
+                </div>
+
+            </div>
+
+            <div class="sidebar sidebar--right">
+
+            </div>
 
         </div>
     </div>
