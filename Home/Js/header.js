@@ -1,13 +1,15 @@
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 // js for search
 
-const label = document.querySelector('.header__search-label')
-const modal = document.querySelector('.header__search-hident')
-const headerContainer = document.querySelector('.header__search__container')
-const headerSearchBtn = document.querySelector('.header__search-btn')
-const headerSearchIcon = document.querySelector('.header__search-icon')
-const containerRecently = document.querySelector('.header__search__container-recently')
-const headerInput = document.querySelector('.header__search-input')
-const headerMenuLabel = document.querySelector('.header__menu-label')
+const label = $('.header__search-label')
+const modal = $('.header__search-hident')
+const headerContainer = $('.header__search__container')
+const headerSearchBtn = $('.header__search-btn')
+const headerSearchIcon = $('.header__search-icon')
+const containerRecently = $('.header__search__container-recently')
+const headerInput = $('.header__search-input')
+const headerMenuLabel = $('.header__menu-label')
 
 var app = document.getElementById('app')
 function closeBuyTicket(){
@@ -51,8 +53,7 @@ function closeMenu(){
 
 // sidebar left
 
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
+
 
 const sidebarSeeMore = $('.sidebar__seeMore')
 const sidebarHide = $('.sidebar__hide')
