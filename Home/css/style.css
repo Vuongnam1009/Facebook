@@ -8,6 +8,7 @@
     display: flex;
     background-color: var(--white-color);
     justify-content: space-between;
+    z-index: 2;
 }
 .header__banner{
     width: 320px;
@@ -484,13 +485,13 @@
 
 /* sidebar */
 .container{
-    z-index: -1;
-    position: absolute;
-    top: 56px;
-    left: 0;
+    display: flex;
+    justify-content: center;
     width:100%;
     min-height: 5000px;
     background-color: var(--main-color);
+    position: absolute;
+    top: 56px;
 }
 .sidebar__menu{
     position: relative;
@@ -546,4 +547,98 @@
     background-color: var(--hover-color);
     cursor: pointer;
 }
+.content{
+    padding: 12px 0;
+    width: 600px;
+    height: 2000px;
+}
+.content__story{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12px;
+}
 
+.content__story-item{
+    position: relative;
+    display: flex;
+    width: 110px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.content__story-item:hover .addstory__img{
+    transform: scale(1.04);
+}
+.content__story-item:hover ,
+.content__story-item:hover .addstory__btn{
+    background-color: rgb(224, 224, 224);
+}
+.addstory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.addstory__img{
+    width: 110px;
+    height: 144px;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.addstory__text{
+    color: var(--black-color);
+    font-size: 12px;
+    margin: 8px 0;
+}
+.addstory__btn{
+    position: absolute;
+    top: 124px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addstory__icon{
+    font-size: 32px;
+    color: rgb(38, 110, 204);
+
+}
+.story__img{
+    width: 110px;
+    height: 200px;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.vvv{
+    position: absolute;
+    width: 110px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.content__story-item:hover .story__img{
+    transform: scale(1.04);
+}
+.content__story-item:hover .vvv{
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.story__avt{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border: 4px solid #1E90FF;
+}
+.story__name{
+    position: absolute;
+    bottom: 0px;
+    color: var(--white-color);
+    font-size: 14px;
+    padding: 0 12px;
+}
