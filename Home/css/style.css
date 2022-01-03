@@ -701,14 +701,8 @@
     padding: 12px 0;
     border-bottom: 1.5px solid var(--main-color);
 }
-.status__header-avt--hover{
-    position: absolute;
-    width: 40px;height: 40px;
-    border-radius: 50%;
-}
-.status__header-avt--hover:hover{
-    background-color:rgba(0, 0, 0, 0.1);
-}
+
+
 .status__header-post{
     display: flex;
     align-items: center;
@@ -730,3 +724,73 @@
     justify-content: center;
     margin-top: 8px;
 }
+.content__hidden{
+    position: relative;
+}
+.content__meeting{
+    width: 590px;
+    background-color: var(--white-color);
+    margin-top: 16px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px #bbbbbb;
+    padding: 12px;
+    display: flex;
+    overflow: hidden;
+}
+.nnn{
+    position: static;
+}
+.meeting__create{
+    height:  40px;
+    width: 196px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #dae6f3;
+    border-radius: 20px;
+    padding: 0 12px;
+    color: #1277db;
+    white-space: nowrap;
+}
+.meeting__create:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.meeting__create-icon{
+    color: rgb(159, 70, 241);
+    font-size: 24px;
+    margin-right: 8px;
+
+}
+.meeting__avt{
+    position: relative;
+    padding-left: 16px;
+    height: 40px;
+}
+.meeting__avt:hover .meeting__avt-sub{
+    display: block;
+}
+.meeting__avt-sub{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.75);
+    min-width: 120px;
+    border-radius: 12px;
+    display: none;
+    z-index: 100;
+}
+.meeting__avt-name,
+.meeting__avt-greeting{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+.meeting__avt-greeting{
+    font-size: 1.2rem;
+}
+

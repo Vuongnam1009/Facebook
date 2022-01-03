@@ -105,9 +105,36 @@ p,h1,h2,h3,h4{
 .avt--square{
     border-radius: 8px;
 }
+.avt--hover{
+    position: absolute;
+    width: 40px;height: 40px;
+    border-radius: 50%;
+}
+.avt--hover:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
 .avt__icon{
     font-size: 20px;
     color: var(--black-color);
+}
+.avt__activate{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.avt__activate-icon{
+    color: #13c74f;
+    font-size: 8px;
+
 }
 
 .license{
