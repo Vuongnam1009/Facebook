@@ -67,3 +67,56 @@ sidebarHide.onclick = function(){
     sidebarMenuMore.style.display = "none"
     sidebarSeeMore.style.display = ""
 }
+const meetingAvts = $$('.meeting__avt')
+const subs = $$('.meeting__avt-sub')
+const contentMeeting = $('.content__meeting')
+const meetingBtnLeft = $('.meeting__btn--left')
+const meetingBtnRight = $('.meeting__btn--right')
+meetingBtnRight.onclick = function(){
+    const aaa = contentMeeting.scrollLeft
+    var leftHt = contentMeeting.scrollLeft
+    var run = setInterval(function(){
+        leftHt = leftHt + 3
+        contentMeeting.scrollLeft = leftHt
+        var aaaa = contentMeeting.scrollLeft
+        if(leftHt >= aaa + 400){
+            clearInterval(run)
+        }
+        if (leftHt != 0) {
+            meetingBtnLeft.style.display = 'flex'
+        }
+        if (aaaa + 3 < leftHt ) {
+            meetingBtnRight.style.display = 'none'
+        }
+    },1)
+
+}
+meetingBtnLeft.onclick = function(){
+    meetingBtnRight.style.display = 'flex'
+    const lef = contentMeeting.scrollLeft
+    var leftHt = contentMeeting.scrollLeft
+    var runLeft = setInterval(function(){
+        leftHt -=3
+        contentMeeting.scrollLeft = leftHt
+        if (leftHt<= lef-399.9) {
+            clearInterval(runLeft)
+        }
+        if (contentMeeting.scrollLeft <= 1) {
+            meetingBtnLeft.style.display = 'none'
+        }
+    },1)
+}
+meetingAvts.forEach((meetingAvt, index) => {
+    meetingAvt.onmouseover = function(){
+        var sub = subs[index]
+        var pos = this.offsetLeft
+        sub.style.left = this.offsetLeft - contentMeeting.scrollLeft  + 'px'
+
+        // if (contentMeeting.scrollLeft != 0 ) {
+        //     meetingBtnLeft.style.display = 'flex'
+        // }
+    }
+});
+
+
+

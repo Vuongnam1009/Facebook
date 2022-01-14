@@ -724,21 +724,21 @@
     justify-content: center;
     margin-top: 8px;
 }
-.content__hidden{
+.content__meeting--parent{
     position: relative;
 }
 .content__meeting{
-    width: 590px;
+    width: 100%;
     background-color: var(--white-color);
     margin-top: 16px;
     border-radius: 12px;
     box-shadow: 0px 0px 1px #bbbbbb;
     padding: 12px;
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
 }
-.nnn{
-    position: static;
+.content__meeting::-webkit-scrollbar{
+    display: none;
 }
 .meeting__create{
     height:  40px;
@@ -763,24 +763,24 @@
 
 }
 .meeting__avt{
-    position: relative;
-    padding-left: 16px;
+    padding-left: 18px;
     height: 40px;
+}
+.meeting__avt:last-child{
+    margin-right: 24px;
 }
 .meeting__avt:hover .meeting__avt-sub{
     display: block;
 }
 .meeting__avt-sub{
     position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 90%;
+    transform: translateX(calc(-50% + 38px));
     padding: 4px 8px;
     background-color: rgba(0, 0, 0, 0.75);
     min-width: 120px;
     border-radius: 12px;
     display: none;
-    z-index: 100;
 }
 .meeting__avt-name,
 .meeting__avt-greeting{
@@ -793,4 +793,38 @@
 .meeting__avt-greeting{
     font-size: 1.2rem;
 }
+.abc{
+    position: relative;
+}
+.meeting__btn{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #8a8686;
+    background-color: var(--white-color);
+    display: flex;
+    z-index: 1;
+}
+.meeting__btn:hover{
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.meeting__btn--left{
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+
+}
+.meeting__btn--right{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+}
+.meeting__btn-icon{
+    font-size: 24px;
+    margin: auto;
+    color: rgb(146, 144, 144);
+}
+
 
