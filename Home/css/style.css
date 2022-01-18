@@ -506,14 +506,8 @@
     position: absolute;
     width: 328px;
     top: 100%;
+    left: 14px;
     border-bottom: 1px solid #acaaaa;
-
-}
-.sidebar__menu-short{
-
-}
-.sidebar__seemore{
-
 }
 .sidebar__menu-more{
     display: none;
@@ -533,7 +527,7 @@
     font-size: 1.5rem;
     margin: 12px 0 4px 8px;
     padding: 8px 0;
-    color: #6e6d6d;
+    color: var(--text-color);
 
 }
 .shortcuts__header-edit{
@@ -548,6 +542,42 @@
     background-color: var(--hover-color);
     cursor: pointer;
 }
+/* right sidebar */
+.sidebar__sponsor{
+    position: relative;
+    padding: 16px 0 6px 0;
+}
+.sidebar__sponsor::after{
+    content: "";
+    position: absolute;
+    width: 330px;
+    top: 100%;
+    left: 14px;
+    border-bottom: 1px solid #acaaaa;
+
+}
+.sponsor__header{
+    font-size: 1.7rem;
+    padding:8px 16px;
+    color: var(--text-color);
+
+}
+.sponsor__content{
+    padding-left: 12px;
+
+}
+.sponsor__content-text{
+    font-size: 1.5rem;
+    line-height: 18px;
+    color: var(--black-color);
+
+}
+.sponsor__content-link{
+    font-size: 1.3rem;
+    color: var(--text-color);
+
+}
+
 .content{
     padding: 12px 0;
     width: 600px;
