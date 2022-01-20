@@ -67,6 +67,7 @@ p,h1,h2,h3,h4{
     cursor: pointer;
 }
 .sidebar__icon{
+    position: relative;
     margin-right: 12px;
 
 }

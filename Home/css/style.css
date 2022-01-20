@@ -560,7 +560,6 @@
     font-size: 1.7rem;
     padding:8px 16px;
     color: var(--text-color);
-
 }
 .sponsor__content{
     padding-left: 12px;
@@ -575,7 +574,16 @@
 .sponsor__content-link{
     font-size: 1.3rem;
     color: var(--text-color);
-
+}
+/* ...sidebar right contact */
+.sidebar__contact{
+    position: relative;
+    padding: 16px 0 6px 0;
+}
+.contact__header{
+    font-size: 1.7rem;
+    padding:8px 16px;
+    color: var(--text-color);
 }
 
 .content{
