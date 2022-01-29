@@ -2,7 +2,7 @@ var posts = [
     {
         id      : 1,
         user_id : 1,
-        time    : new Date('2022-01-24T08:25:00'),
+        time    : new Date('2022-01-29T08:25:00'),
         status  : 'Tết đến đầu ngõ rồi mà vẫn chưa được về nhà 😊😊😊',
     },
     {
@@ -72,11 +72,36 @@ function getDay(date){
     }
    return dayName
 }
+function realTime(date){
+    var text = ''
+    var now = new Date()
+    if (now.getFullYear() > date.getFullYear()
+    || now.getMonth() > date.getMonth()
+    || now.getDate()-date.getDate() >3){
+        text =`${date.getDate()} tháng ${date.getMonth()+1} lúc ${date.getHours()}:${date.getMinutes()}`
+    }else{
+        if (now.getDate()-date.getDate() >1) {
+            text =`${now.getDate()-date.getDate()} ngày`
+        }else{
+            if (now.getDate()-date.getDate() ===1) {
+                text =`Hôm qua lúc ${date.getHours()}:${date.getMinutes()}`
+            }else{
+                if (now.getHours()-date.getHours()>=1) {
+                    text = `${now.getHours()-date.getHours()} giờ`
+                }else{
+                    text = `${now.getMinutes()-date.getMinutes()} phút`
+                }
+            }
+        }
+    }
+    return text
+}
 var html = ''
 posts.forEach((post) => {
     var user = frends.find((frend) =>{
         return frend.id === post.user_id
     })
+    var time = realTime(post.time)
     var day = getDay(post.time)
     html += `<div class="content__post">
                 <div class="post__user">
@@ -88,8 +113,8 @@ posts.forEach((post) => {
                         <p class="post__user-name">
                         ${user.name}
                         </p>
-                        <div class="post__user-time">1 ngày
-                            <p class="post__user-subtime">${day}, ${post.time.getDate()} Tháng ${post.time.getMonth()+1}, ${post.time.getFullYear()} lúc  ${post.time.getHours()}:${post.time.getMinutes()}</p>
+                        <div class="post__user-time">${time}
+                            <p class="post__user-subtime">${day}, ${post.time.getDate()} Tháng ${post.time.getMonth()+1}, ${post.time.getFullYear()} lúc ${post.time.getHours()}:${post.time.getMinutes()}</p>
                         </div>
                     </div>
                     <div class="post__user-btn">
